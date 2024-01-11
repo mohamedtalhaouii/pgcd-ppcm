@@ -1,17 +1,17 @@
-A = int(input("Entrer premier nombre : "))
-B = int(input("Entrer Second nombre : "))
+#find the greatest common divisor
+A = int(input("Enter first number : "))
+B = int(input("Enter Second number : "))
+
 r = 1
 while r > 0: 
     r = A % B
     A = B
     B = r
 if A == 0 and B == 0:
-    print("Le PGCD est 0")
-else:
-    if A == 0:
-        print("Le PGCD est :", B)
-    else:
-        if B == 0:
-            print("Le PGCD est :", A)
-        if B != 0 and A != 0 :  
-          print("Le PGCD est : ", r)
+    print("Greatest Common Divisor is 0")
+elif A == 0:
+        print("Greatest Common Divisor is :", B)
+elif B == 0:
+    print("Greatest Common Divisor is :", A)
+elif B != 0 and A != 0 :  
+    print("Greatest Common Divisor is : ", r)
