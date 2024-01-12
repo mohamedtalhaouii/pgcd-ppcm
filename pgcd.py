@@ -3,10 +3,18 @@ A = int(input("Enter first number : "))
 B = int(input("Enter Second number : "))
 
 r = 1
-while r > 0: 
-    r = A % B
-    A = B
-    B = r
+#Compariason between A and B
+if A > B :
+    while r > 0: 
+        r = A % B
+        A = B
+        B = r
+elif A < B :
+    while r > 0: 
+        r = B % A
+        B = A
+        A = r
+#Cases
 if A == 0 and B == 0:
     print("Greatest Common Divisor is 0")
 elif A == 0:
